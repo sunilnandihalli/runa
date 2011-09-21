@@ -1,0 +1,33 @@
+Hi Sunil,
+
+As part of the interview process we would like you to solve three Clojure exercises listed below. Feel free to let us know if you need any clarifications – you can make necessary assumptions as you see fit. We suggest that you submit your solutions by email in maximum seven days, i.e. by 27 Sep 2011 evening. Please include a README file with every solution describing how to compile/run/test etc. After we review your solutions, we'll have you come in for an in-office discussion with the team. At that time we can discuss your solutions and can pair with you to spend an hour to enhance some aspect of it.
+
+
+[Immutable collections]
+
+Write a function that can be used to print a table of data on screen where numerics are right-aligned, booleans are mid-aligned and the rest are left -aligned, in a way that every column is restricted to 40 characters max. Any column must not take more than the width of the widest cell in any case. Feel free to write helper functions to break down the responsibility into smaller parts.
+
+(defn print-table
+  "Print table of data from vectors/maps"
+  ([list-of-column-titles list-of-data-vectors]
+    ...)
+  ([list-of-data-maps]
+    ...))
+
+
+[Concurrency]
+
+Design a simple LRU cache in Clojure that works as a key-value store. It should be configurable as follows:
+1. Maximum how many milliseconds should each entry live in the cache
+2. Total cache size
+
+
+[Web development]
+
+Write a RESTful web service in Clojure that accepts multi-line text input via a <textarea> HTML element. It should not accept more than 3 requests per minute from the same IP address. Upon submission of the text, the service should remove (a) the blank lines and (b) any lines containing numbers; then, it should return the submitted lines sorted in descending order on the number of whitespace characters in each line.
+
+
+Good luck!
+
+Thanks,
+Shantanu
